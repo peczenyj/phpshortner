@@ -1,8 +1,8 @@
-=My First Url Shortner=
+#My First Url Shortner#
 
 This is a small rest url shortner, build on top Slim framework, NotORM and MySQL.
 
-==Verbs==
+##Verbs##
 
 PUT /add/url
 
@@ -26,36 +26,41 @@ redirect to the long url, example:
 	< Content-Length: 0
 	< Content-Type: text/html
 
-==Dependencies
+##Dependencies
 
 * Slim Framework (for rest support)
 * NotORM (for database support)
 * PHPUnit (for tests)
 
-==Makefile==
+##Makefile
 
 This project has a small Makefile to run tests and reset the database
 
-===Install Dependecies===
+###Install Dependecies
 
 bash$ make composer-install
 
-===Reset Database===
+###Reset Database
 
 bash$ make reset
 
 will run create and init tables scripts, in db/ directory
 
-===Run Tests===
+###Run Tests
 
 bash$ make test
 
 run all tests in test/ directory
 
-==TODO==
+###TODO
 
 - administration panel
 - DELETE id
 - security token
 - change id from integer to base64
 - add memcached to cache results / NotORM_Cache_Memcache
+
+## Author
+
+Tiago Peczenyj - 2013
+github.com/peczenyj
