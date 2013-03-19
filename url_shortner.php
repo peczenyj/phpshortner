@@ -37,9 +37,6 @@ class Shortener {
   }
   
   function shortUrl($url){
-		if(!filter_var($url, FILTER_VALIDATE_URL)){
-			throw new Exception("INVALID URL");
-		}
 	
     $row = $this->dao->insert($url);
 
